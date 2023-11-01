@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+</head>
+<body>
+    <section id = 'main'>
+        <section id = 'input'>
+            
+            <section id = 'input-fields-cnt'>
+                <div>
+                    <label for="years-input">Enter for how many years you will be depositing</label>
+                    <input id = 'years-input' type="number" min = '1' max = "30" step = '1' placeholder="Enter years">
+                </div>
+    
+                <div>
+                    <label for="amount-input">Enter amount of money you will deposit yearly</label>
+                    <input id = 'amount-input' type="number" placeholder="Enter amount">
+                </div>
+    
+                <div>
+                    <label for="return-input">Enter expected return per year (0.01 % - 100%)</label>
+                    <input id = 'return-input' type="number" min="0.01" step="0.01" max = "100" placeholder="Enter return">
+                </div>
+            </section>
+
+            <section id = 'input-button-cnt'>
+
+                <button id = 'calculate-btn'>
+                    Calculate
+                </button>
+
+            </section>
+            
+            
+        </section>
+
+        <section id = 'output'>
+            
+            <section id = 'output-table'>
+
+            </section>
+
+            <section id = 'output-numbers'>
+
+                <div id = 'total-return'>
+                    <span>
+                        Total return: 
+                        <span id = 'total-field'></span>
+                    </span>
+                </div>
+
+                <div id = 'avg-return-year'>
+                    <span>
+                        Avarage yearly return:
+                         <span id = 'avg-yearly-field'></span>
+                    </span>
+                </div>
+
+            </section>
+
+        </section>
+
+    </section>
+</body>
+</html>
+
+<script src = './script.js'></script>

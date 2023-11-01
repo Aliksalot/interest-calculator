@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#input-fields-cnt *{
+    position: relative;
+}
+
+#input-fields-cnt{
+    width: 100%;
+    display: flex;
+}
+
+#input div{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+#input input{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#input-button-cnt{
+    width: 100%;
+}
+
+#input-button-cnt button{
+    position: relative;
+    padding: 0.3rem;
+    float: right;
+    margin: 2rem;
+}
+
+#output{
+    display: none;
+    flex-direction: column;
+    position: relative;
+}
+
+#output-table{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.col{
+    border: 1px solid black;   
+}
+
+.table-el{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.table-el:first-child{
+    border-bottom: 1px solid black;   
+}
+
+.table-el span{
+    position: relative;
+    margin: 4px;
+    padding: 2px;
+}
+
+#output-numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#output-numbers div{
+    margin: 0.2rem;
+}
+
+
+
+@media (max-width: 600px){
+    #input-fields-cnt{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
