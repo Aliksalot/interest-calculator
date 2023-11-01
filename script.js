@@ -117,4 +117,9 @@ const startCalc = () => {
     
 }
 
+const keypress = (event) => {
+    (event.keyCode === 13) && startCalc()
+}
+
+window.addEventListener('keypress', keypress)
 document.getElementById('calculate-btn').addEventListener('click', startCalc);
